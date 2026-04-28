@@ -3,25 +3,22 @@ import React from 'react';
 const ContentGrid = () => {
   const articles = [
     {
-      category: 'INTERIORS',
-      title: 'THE ART OF THE VOID',
-      date: 'MAY 12, 2026',
-      description: 'How negative space defines the most successful modern living environments.',
-      image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800'
+      category: 'COMMUNITY',
+      title: 'VRTUE: BRIDGING THE GAP',
+      date: 'COMING SOON',
+      description: 'Understanding the structural shifts needed to empower Black-led innovation in the modern tech landscape.',
     },
     {
-      category: 'DESIGN',
-      title: 'TYPE AS ARCHITECTURE',
-      date: 'MAY 10, 2026',
-      description: 'A deep dive into the structural integrity of neo-grotesque typefaces.',
-      image: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800'
+      category: 'STRATEGY',
+      title: 'FROM IDEA TO SERIES A',
+      date: 'COMING SOON',
+      description: 'The blueprint for connecting rare talent with rational capital to build lasting institutional power.',
     },
     {
-      category: 'TRAVEL',
-      title: 'THE HIGH LINE REVISITED',
-      date: 'MAY 08, 2026',
-      description: 'Walking the industrial path that changed urban landscaping forever.',
-      image: 'https://images.unsplash.com/photo-1518173946687-a4c8a9833d8e?auto=format&fit=crop&q=80&w=800'
+      category: 'CULTURE',
+      title: 'THE EXCELLENCE IMPERATIVE',
+      date: 'COMING SOON',
+      description: 'How we are transforming the technology space through a community-driven approach to talent.',
     }
   ];
 
@@ -37,7 +34,7 @@ const ContentGrid = () => {
           {articles.map((article, index) => (
             <article key={index} className="grid-card">
               <div className="card-image-wrapper">
-                <img src={article.image} alt={article.title} />
+                <div className="card-placeholder"></div>
               </div>
               <div className="card-info">
                 <span className="card-category">{article.category}</span>
