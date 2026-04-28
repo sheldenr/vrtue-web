@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import SmoothScroll from 'smooth-scroll';
 import Lenis from 'lenis';
 import TopBar from './components/TopBar';
 import Nav from './components/Nav';
 import Home from './pages/Home';
-import Membership from './pages/Membership';
 import Blogs from './pages/Blogs';
 import Mission from './pages/Mission';
 import Contact from './pages/Contact';
@@ -20,7 +18,6 @@ function ScrollToTop() {
 
 function App() {
   useEffect(() => {
-    // Initialize Lenis for scroll inertia
     const lenis = new Lenis({
       duration: 0.8,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -33,23 +30,21 @@ function App() {
       infinite: false,
     });
 
+    let rafId = null;
+    let destroyed = false;
+
     function raf(time) {
+      if (destroyed) return;
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
-
-    // Initialize Smooth Scroll for anchor links
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 500,
-      speedAsDuration: true,
-      easing: 'easeInOutQuart'
-    });
+    rafId = requestAnimationFrame(raf);
 
     return () => {
+      destroyed = true;
+      if (rafId !== null) cancelAnimationFrame(rafId);
       lenis.destroy();
-      if (scroll.destroy) scroll.destroy();
     };
   }, []);
 
