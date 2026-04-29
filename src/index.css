@@ -277,7 +277,7 @@ a {
 }
 .hero-title {
   position: absolute;
-  inset: clamp(28px, 10vh, 96px) auto auto 50%;
+  inset: clamp(12px, 5vh, 48px) auto auto 50%;
   transform: translateX(-50%);
   display: inline-flex;
   align-items: baseline;
@@ -294,6 +294,19 @@ a {
   text-shadow: var(--hero-shadow-x) var(--hero-shadow-y) 0.09em rgba(20, 20, 20, 0.95);
   transition: text-shadow 90ms linear;
 }
+.hero-title-stroke {
+  z-index: 3;
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--color-white);
+  text-shadow: none;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+}
+.hero-title-stroke::after {
+  visibility: hidden;
+}
+
 .hero-title::after {
   content: '';
   width: 0.045em;

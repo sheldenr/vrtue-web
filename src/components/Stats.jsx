@@ -52,7 +52,7 @@ const Stats = () => {
           display: flex;
           align-items: center;
           gap: 40px;
-          margin-bottom: clamp(40px, 8vh, 80px);
+          margin-bottom: 80px;
         }
         .white-divider {
           background-color: var(--color-gold);
@@ -60,9 +60,9 @@ const Stats = () => {
         }
         .stats-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-          gap: clamp(30px, 5vw, 60px);
-          margin-bottom: clamp(40px, 8vh, 80px);
+          grid-template-columns: repeat(4, 1fr);
+          gap: 40px;
+          margin-bottom: 80px;
         }
         .stat-item {
           display: flex;
@@ -70,7 +70,7 @@ const Stats = () => {
         }
         .stat-value {
           font-family: var(--font-display);
-          font-size: clamp(3.5rem, 8vw, 5rem);
+          font-size: 5rem;
           line-height: 1;
           color: var(--color-gold);
           margin-bottom: 1rem;
@@ -105,20 +105,24 @@ const Stats = () => {
           padding: 20px 60px;
           border: 1px solid var(--color-white);
           transition: all 0.3s ease;
-          width: 100%;
-          max-width: 400px;
-          text-align: center;
         }
         .cta-button:hover {
           background-color: var(--color-white);
           color: var(--color-black);
         }
 
-        @media (max-width: 768px) {
-          .stats-header {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 15px;
+        @media (max-width: 1024px) {
+          .stats-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+          }
+        }
+        @media (max-width: 600px) {
+          .stats-grid {
+            grid-template-columns: 1fr;
+          }
+          .stat-value {
+            font-size: 4rem;
           }
         }
       `}</style>
