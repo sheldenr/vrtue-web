@@ -23,7 +23,7 @@ const Contact = () => {
           min-height: 70vh;
           display: flex;
           align-items: center;
-          padding-top: clamp(100px, 15vh, 160px);
+          padding-top: clamp(60px, 10vh, 100px);
           text-align: center;
           width: 100%;
           overflow: hidden;
