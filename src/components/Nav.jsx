@@ -13,8 +13,8 @@ const Nav = () => {
     }
 
     const handleScroll = () => {
-      // Show nav when scrolled past hero section (approx 90vh)
-      const heroHeight = window.innerHeight * 0.9;
+      // Show nav when scrolled past hero section (75vh)
+      const heroHeight = window.innerHeight * 0.7;
       if (window.scrollY > heroHeight) {
         setIsVisible(true);
       } else {

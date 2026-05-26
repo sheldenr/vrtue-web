@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
-import Nav from './components/Nav';
 import Home from './pages/Home';
 import Blogs from './pages/Blogs';
 import Mission from './pages/Mission';
@@ -51,7 +50,6 @@ function App() {
     <Router>
       <div className="app">
         <ScrollToTop />
-        <Nav />
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
