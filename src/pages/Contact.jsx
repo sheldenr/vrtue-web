@@ -11,8 +11,8 @@ const Contact = () => {
             <p className="contact-lead">
               WE ARE ALWAYS LOOKING FOR EXCEPTIONAL TALENT AND PARTNERS.
             </p>
-            <a href="mailto:hello@vrtueproject.org" className="contact-email">
-              HELLO@VRTUEPROJECT.ORG
+            <a href="mailto:bbshelden@gmail.com" className="contact-email">
+              BBSHELDEN@GMAIL.COM
             </a>
           </div>
         </div>

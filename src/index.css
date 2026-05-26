@@ -195,7 +195,7 @@ a {
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  padding-top: clamp(140px, 20vh, 280px);
+  padding-top: clamp(180px, 25vh, 320px);
   padding-bottom: clamp(100px, 15vh, 180px);
 }
 .hero-v-logo {

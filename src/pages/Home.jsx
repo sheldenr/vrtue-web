@@ -11,7 +11,7 @@ const talentData = [
     location: 'Atlanta, USA',
     website: 'https://www.sheldenr.dev',
     role: 'Cloud Platform Engineer at Fiserv. Building scalable infrastructure and automating global financial systems.',
-    socialLink: 'https://linkedin.com/in/sheldenrattray',
+    socialLink: 'https://linkedin.com/in/shelden-rattray',
     image: sheldenImage,
     aspectRatio: '0.85' 
   },
