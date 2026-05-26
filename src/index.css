@@ -54,6 +54,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  position: relative;
 }
 
 html.lenis, html.lenis body {
@@ -194,25 +195,22 @@ a {
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  padding-top: 280px;
-  padding-bottom: 180px;
+  padding-top: clamp(140px, 20vh, 280px);
+  padding-bottom: clamp(100px, 15vh, 180px);
 }
-
 .hero-v-logo {
   position: absolute;
   top: var(--padding-container);
   left: var(--padding-container);
   font-family: 'Gloock', serif;
   font-size: 2rem;
-  color: var(--color-white);
-  z-index: 10;
-  line-height: 1;
+  user-select: none;
 }
 
 .hero-content-centered {
-  width: 100%;
   max-width: 900px;
-  margin: 0 var(--padding-container);
+  margin-left: var(--padding-container);
+  margin-right: var(--padding-container);
   position: relative;
   z-index: 2;
 }
@@ -409,13 +407,16 @@ a {
 
 .footer-cta {
   text-align: center;
-  padding: 20vh 0;
+  padding: 15vh 0;
+  width: 100%;
+  border-top: 1px solid rgba(245, 240, 232, 0.05);
+  border-bottom: 1px solid rgba(245, 240, 232, 0.05);
+  position: relative;
 }
 
 .creator-section {
   width: 100%;
   padding: 100px var(--padding-container);
-  border-top: 1px solid rgba(245, 240, 232, 0.05);
 }
 
 .creator-container {
@@ -436,13 +437,13 @@ a {
 .creator-signature {
   position: absolute;
   bottom: -45px;
-  right: -80px;
+  left: -80px;
   width: 200px;
   z-index: 1; /* Behind the polaroid */
   pointer-events: none;
   opacity: 0.5;
   filter: brightness(0.7) invert(1);
-  transform: rotate(-5deg);
+  transform: rotate(5deg);
 }
 
 .polaroid-card {
@@ -461,14 +462,21 @@ a {
 .polaroid-card .talent-image {
   filter: none;
 }
+.creator-content {
+  max-width: 850px;
+}
 
 .creator-description {
   font-family: var(--font-body);
   font-size: clamp(1.2rem, 2vw, 1.8rem);
   line-height: 1.4;
+  color: rgba(245, 240, 232, 0.4);
+  margin-top: 20px;
+}
+
+.creator-description .highlight {
   color: var(--color-white);
-  opacity: 0.9;
-  max-width: 850px;
+  font-weight: 700;
 }
 
 @media (max-width: 800px) {
@@ -476,10 +484,11 @@ a {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: left;
+    justify-items: center;
   }
   .creator-portrait {
     max-width: 300px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -488,7 +497,12 @@ a {
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   margin-bottom: 24px;
   text-transform: none;
+  color: rgba(245, 240, 232, 0.5);
+}
+
+.footer-cta-title .highlight {
   color: var(--color-white);
+  font-weight: 700;
 }
 
 .footer-email-button {
@@ -626,6 +640,7 @@ a {
   letter-spacing: 0.05em;
   color: var(--color-white);
   text-decoration: none;
+  user-select: none;
 }
 
 .nav-links {
@@ -789,8 +804,7 @@ a {
 
 /* Talent Grid / Cards */
 .talent-grid-full {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   columns: 6;
   column-gap: 4px;
   background-color: var(--color-black);
@@ -822,13 +836,30 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 1.2s ease;
+  transition: filter 0.8s ease;
   filter: grayscale(100%);
 }
 
+.talent-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gloock', serif;
+  font-size: 5rem;
+  color: rgba(245, 240, 232, 0.05);
+  background-color: #111;
+  user-select: none;
+  transition: color 0.8s ease;
+}
+
 .talent-card:hover .talent-image {
-  transform: scale(1.03);
-  filter: grayscale(40%);
+  filter: grayscale(0%);
+}
+
+.talent-card:hover .talent-placeholder {
+  color: rgba(245, 240, 232, 0.4);
 }
 
 .talent-info-static {
@@ -878,9 +909,9 @@ a {
   display: block;
   width: 100%;
   padding: 16px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.03);
   color: var(--color-white);
-  border-top: 1px solid rgba(245, 240, 232, 0.1);
+  border: none;
   font-family: var(--font-body);
   font-size: 0.65rem;
   font-weight: 700;
@@ -888,12 +919,29 @@ a {
   letter-spacing: 0.15em;
   text-decoration: none;
   text-align: center;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  z-index: 1;
+  transform: translate(0, 0);
 }
 
 .talent-social-link:hover {
   background-color: var(--color-white);
   color: var(--color-black);
+  transform: translate(-5px, -5px);
+  box-shadow: 
+    1px 1px 0px #cccccc,
+    2px 2px 0px #cccccc,
+    3px 3px 0px #cccccc,
+    4px 4px 0px #cccccc,
+    5px 5px 0px #cccccc;
+}
+
+.talent-social-link:active {
+  transform: translate(-2px, -2px);
+  box-shadow: 
+    1px 1px 0px #cccccc,
+    2px 2px 0px #cccccc;
 }
 
 @media (max-width: 1400px) {
@@ -916,7 +964,7 @@ a {
 
 @media (max-width: 500px) {
   .talent-grid-full {
-    columns: 1;
+    columns: 2;
   }
 }
 
