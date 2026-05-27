@@ -1,5 +1,5 @@
 import React from 'react';
-import sheldenAltImage from '../assets/shelden-alt.png';
+import sheldenAltImage from '../assets/shelden-rattray-alt.png';
 
 const Footer = () => {
   return (
@@ -13,16 +13,16 @@ const Footer = () => {
             </p>
           </div>
           <div className="creator-portrait">
-            <img 
-              src="https://www.sheldenr.dev/assets/signature.svg" 
-              alt="Signature" 
+            <img
+              src="https://www.sheldenr.dev/assets/signature.svg"
+              alt="Signature"
               className="creator-signature"
             />
             <div className="polaroid-card">
               <div className="talent-image-wrapper">
-                <img 
-                  src={sheldenAltImage} 
-                  alt="Shelden Rattray" 
+                <img
+                  src={sheldenAltImage}
+                  alt="Shelden Rattray"
                   className="talent-image"
                 />
               </div>

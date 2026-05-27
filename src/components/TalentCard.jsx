@@ -1,12 +1,12 @@
 import React from 'react';
 
 const TalentCard = ({ name, location, website, role, socialLink, image, aspectRatio }) => {
-  const isPlaceholder = name === 'TBD';
+  const isPlaceholder = name === 'TBD' || !image;
 
   return (
     <div className="talent-card">
       <div 
-        className="talent-image-wrapper" 
+        className="talent-image-wrapper"
         style={{ aspectRatio: aspectRatio || '1/1' }}
       >
         {isPlaceholder ? (
