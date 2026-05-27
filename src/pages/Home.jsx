@@ -5,12 +5,13 @@ import Footer from '../components/Footer';
 import uyiosaImage from '../assets/uyiosa-nehikhuere.jpg';
 import sheldenImage from '../assets/shelden-rattray.png';
 import raphaelImage from '../assets/raphael-omorose.png';
+import seanImage from '../assets/sean-tolliver.jpg';
 
 const talentData = [
   { id: 1, name: 'Uyiosa Nehikhuere', location: 'Atlanta, USA', role: 'Software Engineer Intern @ New York Life, Prev SWE Intern @ FactSet, Computer Science student at Georgia State University.', socialLink: 'https://www.linkedin.com/in/uyiosa-nehikhuere-16406328b/', image: uyiosaImage, aspectRatio: '1/1' },
-  { id: 2, name: 'Shelden Rattray', location: 'Atlanta, USA', role: 'Cloud Platform Engineer Intern at Fiserv. Computer Science student at Georgia State University.', socialLink: 'https://linkedin.com/in/shelden-rattray', image: sheldenImage, aspectRatio: '0.8/1' },
+  { id: 2, name: 'Shelden Rattray', location: 'Atlanta, USA', role: 'Cloud Platform Engineer Intern at Fiserv. Computer Science student at Georgia State University.', socialLink: 'https://linkedin.com/in/shelden-rattray', image: sheldenImage, aspectRatio: '0.88/1' },
   { id: 3, name: 'Raphael Omorose', location: 'Atlanta, USA', role: '2x Software Engineer Intern @ Uber, Computer Science student at Georgia State University, GSU Colorstack Vice President', socialLink: 'https://www.linkedin.com/in/raphaelomorose/', image: raphaelImage, aspectRatio: '1.2/1' },
-  { id: 4, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '0.9/1' },
+  { id: 4, name: 'Sean Tolliver', location: 'Atlanta, USA', role: 'Co-Founder of TRKGLOBAL LLC. Georgia Tech Alumni MBA Management Of Technology.', socialLink: 'https://www.linkedin.com/in/seantolliver/', image: seanImage, aspectRatio: '1/1' },
   { id: 5, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '1.1/1' },
   { id: 6, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '1/1' },
   { id: 7, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '0.85/1' },
