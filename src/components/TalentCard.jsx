@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TalentCard = ({ name, location, website, role, socialLink, image, aspectRatio }) => {
+const TalentCard = ({ name, location, role, socialLink, image, aspectRatio }) => {
   const isPlaceholder = name === 'TBD' || !image;
 
   return (
