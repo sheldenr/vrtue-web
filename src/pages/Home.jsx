@@ -7,11 +7,13 @@ import sheldenImage from '../assets/shelden-rattray.png';
 import raphaelImage from '../assets/raphael-omorose.png';
 import seanImage from '../assets/sean-tolliver.jpg';
 import jermaineImage from '../assets/jermaine-washington.jpg';
+import kereithImage from '../assets/kereith-dyce.jpg';
 
 const talentData = [
   { id: 5, name: 'Jermaine Washington Jr.', location: 'Atlanta, USA', role: 'Senior Software Engineer at Equifax. Florida State University Alumni.', socialLink: 'https://www.linkedin.com/in/jermainewashingtonjr/', image: jermaineImage, aspectRatio: '1.1/1' },
   { id: 4, name: 'Sean Tolliver', location: 'Atlanta, USA', role: 'Co-Founder of TRKGLOBAL LLC. Georgia Tech Alumni MBA Management Of Technology.', socialLink: 'https://www.linkedin.com/in/seantolliver/', image: seanImage, aspectRatio: '1/1' },
   { id: 1, name: 'Uyiosa Nehikhuere', location: 'Atlanta, USA', role: 'Software Engineer Intern @ New York Life, Prev SWE Intern @ FactSet, Computer Science student at Georgia State University.', socialLink: 'https://www.linkedin.com/in/uyiosa-nehikhuere-16406328b/', image: uyiosaImage, aspectRatio: '1/1' },
+  { id: 13, name: 'Kereith Dyce', location: 'Atlanta, USA', role: 'Advanced Application Developer at Invesco Ltd, Auburn University Alumni', socialLink: 'https://www.linkedin.com/in/kareithdyce/', image: kereithImage, aspectRatio: '1/1' },
   { id: 3, name: 'Raphael Omorose', location: 'Atlanta, USA', role: '2x Software Engineer Intern @ Uber, Computer Science student at Georgia State University, GSU Colorstack Vice President', socialLink: 'https://www.linkedin.com/in/raphaelomorose/', image: raphaelImage, aspectRatio: '1.2/1' },
   { id: 2, name: 'Shelden Rattray', location: 'Atlanta, USA', role: 'Cloud Platform Engineer Intern at Fiserv. Computer Science student at Georgia State University.', socialLink: 'https://linkedin.com/in/shelden-rattray', image: sheldenImage, aspectRatio: '0.88/1' },
   { id: 6, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '1/1' },
