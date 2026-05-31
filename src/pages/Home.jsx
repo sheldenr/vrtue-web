@@ -8,6 +8,7 @@ import raphaelImage from '../assets/raphael-omorose.png';
 import seanImage from '../assets/sean-tolliver.jpg';
 import jermaineImage from '../assets/jermaine-washington.jpg';
 import kereithImage from '../assets/kereith-dyce.jpg';
+import romaneImage from '../assets/romane-marshall.jpg';
 
 const talentData = [
   { id: 5, name: 'Jermaine Washington Jr.', location: 'Atlanta, USA', role: 'Senior Software Engineer at Equifax. Florida State University Alumni.', socialLink: 'https://www.linkedin.com/in/jermainewashingtonjr/', image: jermaineImage, aspectRatio: '1.1/1' },
@@ -16,7 +17,7 @@ const talentData = [
   { id: 13, name: 'Kereith Dyce', location: 'Atlanta, USA', role: 'Advanced Application Developer at Invesco Ltd, Auburn University Alumni', socialLink: 'https://www.linkedin.com/in/kareithdyce/', image: kereithImage, aspectRatio: '1/1' },
   { id: 3, name: 'Raphael Omorose', location: 'Atlanta, USA', role: '2x Software Engineer Intern @ Uber, Computer Science student at Georgia State University, GSU Colorstack Vice President', socialLink: 'https://www.linkedin.com/in/raphaelomorose/', image: raphaelImage, aspectRatio: '1.2/1' },
   { id: 2, name: 'Shelden Rattray', location: 'Atlanta, USA', role: 'Cloud Platform Engineer Intern at Fiserv. Computer Science student at Georgia State University.', socialLink: 'https://linkedin.com/in/shelden-rattray', image: sheldenImage, aspectRatio: '0.88/1' },
-  { id: 6, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '1/1' },
+  { id: 6, name: 'Romane Marshall', location: 'Atlanta, USA', role: 'Full-Stack Engineer at Accenture', socialLink: 'https://www.linkedin.com/in/romane-m-30a6a31ab/', image: romaneImage, aspectRatio: '1/1' },
   { id: 7, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '0.85/1' },
   { id: 8, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '1.05/1' },
   { id: 9, name: 'TBD', location: 'Coming Soon', role: 'Community member spotlight. We are currently vetting and aggregating the next wave of Black excellence in tech.', socialLink: '#', aspectRatio: '0.75/1' },
