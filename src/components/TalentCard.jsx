@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TalentCard = ({ name, location, role, socialLink, image, aspectRatio }) => {
+const TalentCard = ({ name, location, role, socialLink, image, aspectRatio, isCTA }) => {
   const isPlaceholder = name === 'TBD' || !image;
 
   return (
-    <div className="talent-card">
+    <div className={`talent-card ${isCTA ? 'talent-card-cta' : ''}`}>
       <div 
         className="talent-image-wrapper"
         style={{ aspectRatio: aspectRatio || '1/1' }}
@@ -21,7 +21,7 @@ const TalentCard = ({ name, location, role, socialLink, image, aspectRatio }) =>
         <p className="talent-role">{role}</p>
         <div className="talent-links">
           <a href={socialLink} className="talent-social-link" target="_blank" rel="noopener noreferrer">
-            Connect
+            {isCTA ? 'Join Us' : 'Connect'}
           </a>
         </div>
       </div>

@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Sponsors = () => {
-  const sponsors = [
-    "TBD", "TBD", "TBD", "TBD"
-  ];
+  const sponsors = [];
 
   return (
     <section className="sponsors bg-white section">
