@@ -15,7 +15,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="banner-content">
-        <p>VRTUE is currently being solo-curated. Please reach out if you have ANY suggestions for this list.</p>
+        <p>VRTUE is currently being solo-curated. Please reach out if you have ANY suggestions for this list, they're probably qualified.</p>
       </div>
       <button className="banner-close" onClick={handleDismiss} aria-label="Close banner">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
