@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import TalentCard from '../components/TalentCard';
 import Footer from '../components/Footer';
-import uyiosaImage from '../assets/uyiosa-nehikhuere.jpg';
-import sheldenImage from '../assets/shelden-rattray.png';
-import raphaelImage from '../assets/raphael-omorose.png';
-import seanImage from '../assets/sean-tolliver.jpg';
-import jermaineImage from '../assets/jermaine-washington.jpg';
-import kereithImage from '../assets/kereith-dyce.jpg';
-import romaneImage from '../assets/romane-marshall.jpg';
-import rodricousImage from '../assets/rodricous-cannady.jpg';
-import ikennaImage from '../assets/ikenna-okonkwo.jpg';
-import nickImage from '../assets/nick-bear.jpg';
-import georgeImage from '../assets/george-purnell.jpg';
-import rolandImage from '../assets/roland-saavedra.jpg';
+import uyiosaImage from '../assets/uyiosa-nehikhuere.webp';
+import sheldenImage from '../assets/shelden-rattray.webp';
+import raphaelImage from '../assets/raphael-omorose.webp';
+import seanImage from '../assets/sean-tolliver.webp';
+import jermaineImage from '../assets/jermaine-washington.webp';
+import kereithImage from '../assets/kereith-dyce.webp';
+import romaneImage from '../assets/romane-marshall.webp';
+import rodricousImage from '../assets/rodricous-cannady.webp';
+import ikennaImage from '../assets/ikenna-okonkwo.webp';
+import nickImage from '../assets/nick-bear.webp';
+import georgeImage from '../assets/george-purnell.webp';
+import rolandImage from '../assets/roland-saavedra.webp';
 
 const talentData = [
   { id: 15, name: 'Roland Saavedra', location: 'San Francisco, USA', role: 'Co-Founder of MarkIt (YC F25)', socialLink: 'https://www.linkedin.com/in/rsaav/', image: rolandImage, aspectRatio: '1/1' },

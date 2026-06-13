@@ -1,5 +1,5 @@
 import React from 'react';
-import sheldenAltImage from '../assets/shelden-rattray-alt.png';
+import sheldenAltImage from '../assets/shelden-rattray-alt.webp';
 
 const Footer = () => {
   return (

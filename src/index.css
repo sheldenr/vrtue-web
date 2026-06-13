@@ -104,12 +104,11 @@ img {
 .banner {
   background-color: var(--color-white);
   color: var(--color-black);
-  padding: 10px 24px;
+  padding: 12px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 2000;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -130,25 +129,29 @@ img {
 
 .banner-content p {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: -0.01em;
   margin: 0;
+  max-width: 900px;
+  line-height: 1.4;
 }
 
 .banner-close {
   position: absolute;
   right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
+  padding: 8px;
   color: var(--color-black);
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
+  opacity: 0.4;
+  transition: all 0.2s ease;
 }
 
 .banner-close:hover {
@@ -157,11 +160,14 @@ img {
 
 @media (max-width: 768px) {
   .banner {
-    padding: 10px 40px 10px 20px;
+    padding: 16px 44px 16px 20px;
+    text-align: left;
+    justify-content: flex-start;
   }
   
   .banner-content p {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
   }
 }
 
