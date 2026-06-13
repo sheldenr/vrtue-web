@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 import Home from './pages/Home';
+import Banner from './components/Banner';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,6 +47,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <Banner />
         <ScrollToTop />
         <main className="main-content">
           <Routes>

@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Nav = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
+  const [isVisible, setIsVisible] = useState(location.pathname !== '/');
 
   useEffect(() => {
     // Only apply the scroll behavior on the Home page
     if (location.pathname !== '/') {
-      setIsVisible(true);
       return;
     }
 

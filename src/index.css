@@ -100,6 +100,58 @@ img {
   padding: var(--padding-section) 0;
 }
 
+/* Banner */
+.banner {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.banner-content p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.banner-close {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: var(--color-black);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.banner-close:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 12px 40px 12px 20px;
+  }
+  
+  .banner-content p {
+    font-size: 0.75rem;
+  }
+}
+
 .full-bleed {
   width: 100vw;
   position: relative;
