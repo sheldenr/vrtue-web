@@ -12,8 +12,10 @@ import romaneImage from '../assets/romane-marshall.jpg';
 import rodricousImage from '../assets/rodricous-cannady.jpg';
 import ikennaImage from '../assets/ikenna-okonkwo.jpg';
 import nickImage from '../assets/nick-bear.jpg';
+import georgeImage from '../assets/george-purnell.jpg';
 
 const talentData = [
+  { id: 14, name: 'George Purnell', location: 'Atlanta, USA', role: 'Software Engineer at Google', socialLink: 'https://www.linkedin.com/in/georgewpurnell/', image: georgeImage, aspectRatio: '1/1' },
   { id: 9, name: 'Nick Bear', location: 'Atlanta, USA', role: 'Software Developer at Southern Company', socialLink: 'https://www.linkedin.com/in/nickbear/', image: nickImage, aspectRatio: '1/1' },
   { id: 5, name: 'Jermaine Washington Jr.', location: 'Atlanta, USA', role: 'Senior Software Engineer at Equifax. Florida State University Alumni.', socialLink: 'https://www.linkedin.com/in/jermainewashingtonjr/', image: jermaineImage, aspectRatio: '1.1/1' },
   { id: 7, name: 'Rodricous Cannady', location: 'Atlanta, USA', role: 'Senior Software Engineer at Equifax', socialLink: 'https://www.linkedin.com/in/rodricous-cannady-69221751/', image: rodricousImage, aspectRatio: '1/1' },
