@@ -18,7 +18,7 @@ import koladeImage from '../assets/kolade-ayeni.webp';
 
 const talentData = [
   { id: 16, name: 'Kolade Ayeni', location: 'Seattle, Washington', role: 'Software Engineer at Microsoft', socialLink: 'https://www.linkedin.com/in/kolade-ayeni/', image: koladeImage, aspectRatio: '0.86/1' },
-  { id: 15, name: 'Roland Saavedra', location: 'San Francisco, California', role: 'Co-Founder of MarkIt (YC F25)', socialLink: 'https://www.linkedin.com/in/rsaav/', image: rolandImage, aspectRatio: '1/1' },
+  { id: 15, name: 'Roland Saavedra', location: 'San Francisco, California', role: 'Co-Founder of MarkIt (YC F25). Prev at Google.', socialLink: 'https://www.linkedin.com/in/rsaav/', image: rolandImage, aspectRatio: '1/1', isYC: true },
   { id: 14, name: 'George Purnell', location: 'Atlanta, Georgia', role: 'Software Engineer at Google', socialLink: 'https://www.linkedin.com/in/georgewpurnell/', image: georgeImage, aspectRatio: '0.9/1' },
   { id: 9, name: 'Nick Bear', location: 'Atlanta, Georgia', role: 'Software Developer at Southern Company', socialLink: 'https://www.linkedin.com/in/nickbear/', image: nickImage, aspectRatio: '0.95/1' },
   { id: 5, name: 'Jermaine Washington Jr.', location: 'Atlanta, Georgia', role: 'Senior Software Engineer at Equifax. Florida State University Alumni.', socialLink: 'https://www.linkedin.com/in/jermainewashingtonjr/', image: jermaineImage, aspectRatio: '1/1' },

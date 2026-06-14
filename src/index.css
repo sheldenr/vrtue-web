@@ -993,12 +993,26 @@ a {
   font-family: var(--font-body);
   font-size: 0.95rem;
   line-height: 1.5;
-  opacity: 0.75;
+  color: rgba(245, 240, 232, 0.75);
   margin-bottom: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.yc-badge {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  margin-left: 8px;
+  margin-right: 4px;
+  border-radius: 0 !important;
+  position: relative;
+  top: -1px;
+  filter: none !important;
+  opacity: 1 !important;
 }
 
 .talent-links {
