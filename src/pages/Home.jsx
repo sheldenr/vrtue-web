@@ -15,8 +15,10 @@ import nickImage from '../assets/nick-bear.webp';
 import georgeImage from '../assets/george-purnell.webp';
 import rolandImage from '../assets/roland-saavedra.webp';
 import koladeImage from '../assets/kolade-ayeni.webp';
+import khalilImage from '../assets/khalil-sayid.webp';
 
 const talentData = [
+  { id: 17, name: 'Khalil Sayid', location: 'Atlanta, Georgia', role: 'Software Engineer at Microsoft. Georgia Tech Alumni.', socialLink: 'https://www.linkedin.com/in/khalil-sayid/', image: khalilImage, aspectRatio: '1/1' },
   { id: 16, name: 'Kolade Ayeni', location: 'Seattle, Washington', role: 'Software Engineer at Microsoft', socialLink: 'https://www.linkedin.com/in/kolade-ayeni/', image: koladeImage, aspectRatio: '0.86/1' },
   { id: 15, name: 'Roland Saavedra', location: 'San Francisco, California', role: 'Co-Founder of MarkIt (YC F25). Prev at Google.', socialLink: 'https://www.linkedin.com/in/rsaav/', image: rolandImage, aspectRatio: '1/1', isYC: true },
   { id: 14, name: 'George Purnell', location: 'Atlanta, Georgia', role: 'Software Engineer at Google', socialLink: 'https://www.linkedin.com/in/georgewpurnell/', image: georgeImage, aspectRatio: '0.9/1' },
