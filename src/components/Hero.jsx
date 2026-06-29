@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="hero bg-black full-bleed">
-      <div className="hero-v-logo">V</div>
+      <div className="hero-v-logo" aria-hidden="true"></div>
       
       <div className="hero-content-centered">
         <h1 className="hero-text">

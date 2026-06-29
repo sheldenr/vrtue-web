@@ -289,6 +289,10 @@ a {
   user-select: none;
 }
 
+.hero-v-logo::before {
+  content: "V";
+}
+
 .hero-content-centered {
   max-width: 900px;
   margin-left: var(--padding-container);
